@@ -554,10 +554,19 @@ video {
   display: none;
 }
 
-.font-rubik {
-  font-family: Rubik, serif;
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.font-thin {
-  font-weight: 100;
+.bg-mobile {
+  background-image: url("/src/images/pattern-bg-mobile.png");
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.font-rubik {
+  font-family: Rubik, serif;
 }
