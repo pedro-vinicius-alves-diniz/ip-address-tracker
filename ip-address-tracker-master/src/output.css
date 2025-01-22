@@ -553,3 +553,11 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.font-rubik {
+  font-family: Rubik, serif;
+}
+
+.font-thin {
+  font-weight: 100;
+}
