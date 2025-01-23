@@ -13,6 +13,9 @@ module.exports = {
       },
       fontFamily: {
         'rubik': ["Rubik", "serif"]
+      },
+      aspectRatio: {
+        'mobile': '4/5'
       }
     },
   },

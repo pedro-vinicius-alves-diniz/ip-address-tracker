@@ -20,26 +20,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/output.css" />
-
   </head>
-  <body class="font-rubik">
-    <div id="container-main">
-      <header class="bg-mobile md:bg-desktop bg-cover">
-        <h1>IP Address Tracker</h1>
-        <form>
-          <input type="text" placeholder="Search for any IP address or domain">
-          <button>
-            <img src="src/images/icon-arrow.svg" alt="Button Search" class="bg-black">
-          </button>
-        </form>
-      </header>
-      
-      IP Address
-      Location
-      Timezone UTC
-      <!-- add offset value dynamically using the API -->
-      ISP
-    </div>
+  <body class="font-rubik h-screen">
+    <div id="container-main" class="h-full">
+      <header
+        class="bg-mobile md:bg-desktop bg-cover bg-center h-[35%] flex flex-col items-center gap-5"
+      >
+        <h1 class="mt-4 text-white font-medium text-2xl">IP Address Tracker</h1>
 
+        <form
+          class="w-full"
+        >
+          <div class=" flex rounded-xl overflow-hidden w-[500px] max-w-[80%] justify-self-center">
+            <input type="text" class="p-2 outline-none rounded-l-xl w-full placeholder:text-sm" placeholder="Search for any IP address or domain"/>
+            <button class="p-4 bg-black rounded-r-xl">
+              <img
+                src="src/images/icon-arrow.svg"
+                alt="Button Search"
+                class="bg-black"
+              />
+            </button>
+          </div>
+        </form>
+        
+      </header>
+
+      <main class="h-[65%] w-full bg-zinc-500 border-transparent">
+
+        <div class="border border-red-600 max-w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 py-4 md:px-4 text-center md:text-start bg-white rounded-xl -mt-20">
+          <div>
+            <p class="text-xs text-dark-gray font-bold">IP Address</p>
+             <span class="text-very-dark-gray font-semibold text-lg">192.212.174.101</span>
+          </div>
+          <div>
+            <p class="text-xs text-dark-gray font-bold">Location</p>
+            <span class="text-very-dark-gray text-lg font-semibold">Brooklyn, NY 10001</span>
+          </div>
+          <div>
+            <p class="text-xs text-dark-gray font-bold">Timezone UTC</p>
+            <span class="text-very-dark-gray text-lg font-semibold">UTC-05:00</span>
+          </div>
+          <div>
+            <p class="text-xs text-dark-gray font-bold">ISP </p>
+            <span class="text-very-dark-gray text-lg font-semibold">SpaceX Starlink</span>
+            <!-- add offset value dynamically using the API -->
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
